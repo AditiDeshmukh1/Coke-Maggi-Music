@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #ffcccb
+}
+h1{
+	font-family: Dancing Script, cursive;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ba6b6c;
+	padding: 20px;
+}
+.middle li{
+	list-style: none;
+	display: inline-block;
+	padding: 0px 25px;
+}
+.middle li a{
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	transition: all 0.3s ease 0s;
+	color: #000;
+}
+.middle li a:hover{
+	color: #fff;
+}
+.main{
+	margin-right: 20px;
+}
+.main li{
+	list-style: none;
+	display: inline-block;
+	padding: 5px;
+}
+.main li a button{
+	text-decoration: none;
+	border: none;
+	background-color: #ba6b6c;
+	font-family: 'Raleway', sans-serif;
+	transition: all 0.3s ease 0s;
+	color: #000;
+	cursor: pointer;
+}	
+.main li a button:hover{
+	color: #fff;
+}
+.search{
+	margin-left: 25px;
+}
+.search input{
+	border: 2px solid #000;
+	height: 40px;
+	width: 300px;
+	border-radius: 30px;
+	padding: 0px 10px;
+}
+.search button{
+	position: relative;
+	left: -50px;
+	height: 40px;
+	border: 1px solid #000;
+	outline: none;
+	border-radius: 0px 30px 30px 0px;
+	background: none;
+	cursor: pointer;
+}
