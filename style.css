@@ -5,8 +5,9 @@
 body{
 	background-color: #ffcccb
 }
-h1{
+.navbar-brand{
 	font-family: Dancing Script, cursive;
+	font-size: 30px;
 }
 header{
 	display: flex;
@@ -15,29 +16,34 @@ header{
 	background-color: #ba6b6c;
 	padding: 20px;
 }
-.middle li{
-	list-style: none;
-	display: inline-block;
-	padding: 0px 25px;
+nav{
+	display: flex;
+	align-items: center;
+	background-color: #ba6b6c;
+	padding: 20px;
 }
-.middle li a{
+.navbar-collapse li{
+	list-style: none;
+}
+.navbar-collapse li a{
 	text-decoration: none;
 	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
 	transition: all 0.3s ease 0s;
 	color: #000;
 }
-.middle li a:hover{
+.navbar-collapse li a:hover{
 	color: #fff;
 }
-.main{
-	margin-right: 20px;
+.navbar-right{
+	margin-right: 40px;
 }
-.main li{
+.navbar-right li{
 	list-style: none;
 	display: inline-block;
 	padding: 5px;
 }
-.main li a button{
+.navbar-right li a button{
 	text-decoration: none;
 	border: none;
 	background-color: #ba6b6c;
@@ -46,26 +52,39 @@ header{
 	color: #000;
 	cursor: pointer;
 }	
-.main li a button:hover{
+.navbar-right li a button:hover{
 	color: #fff;
 }
 .search{
-	margin-left: 25px;
-}
-.search input{
-	border: 2px solid #000;
+	position: absolute;
+	padding: 10px;
 	height: 40px;
-	width: 300px;
-	border-radius: 30px;
-	padding: 0px 10px;
 }
-.search button{
-	position: relative;
-	left: -50px;
-	height: 40px;
-	border: 1px solid #000;
-	outline: none;
-	border-radius: 0px 30px 30px 0px;
-	background: none;
-	cursor: pointer;
+.inputbox{
+	border-top: 1.5px solid #000;
+	border-bottom: 1.5px solid #000;
+	border-left: 1.5px solid #000;
+	border-right: none;
+	background-color: #ffcccb;
+	width: 240px;
+	float: left;
+	padding: 0;
+	color: #000;
+	font-size: 16px;
+	transition: 0.4s all;
+	line-height: 40px;
+}
+.searchbutton{
+	color: #000;
+	border-top: 1.5px solid #000;
+	border-bottom: 1.5px solid #000;
+	border-right: 1.5px solid #000;
+	border-left: none;
+	background-color: #ef9a9a;
+	float: right;
+	text-decoration: none;
+	width: 40px;
+	height: 43px;
+	line-height: 40px;
+	text-align: center;
 }
